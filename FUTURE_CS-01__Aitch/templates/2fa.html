@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Verification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='2fa_style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Two-Factor Authentication</h2>
+            <form action="/2fa" method="POST">
+                <p class="instruction">Please enter the 2FA code sent to your device: <p style="color: yellow; font-weight: bold;">{{ code }}</p></p>
+                <div class="input-box">
+                    <input type="text" name="verification_code" required>
+                    <label>Verification Code</label>
+                </div>
+                <button type="submit" class="btn">Verify</button>
+            </form>
+        </div>
+    </div>
+       
+</div>
+</body>
+</html>

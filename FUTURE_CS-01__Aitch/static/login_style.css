@@ -1,0 +1,102 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+    font-size: 16px;
+}
+
+/* Login container */
+.login-container {
+    width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background: linear-gradient(135deg, #ff6a6a 0%, #ff9a9e 100%);
+}
+
+/* Title for the login form */
+.login-box h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Input box */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-bottom: 2px solid #FFD700;
+}
+
+.input-box label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    pointer-events: none;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -20px;
+    color: #FFD700;
+    font-size: 0.9rem;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 25px;
+    color: #333;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFC300;
+}
+
+/* Forgot Password link */
+.forgot-pw {
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-pw:hover {
+    text-decoration: underline;
+}

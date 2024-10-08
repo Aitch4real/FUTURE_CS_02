@@ -22,19 +22,19 @@ Configure Major Firewall Rules:
 
 4. **Allow HTTP:**
 
-```sudo ufw allow 80/tcp```
+              sudo ufw allow 80/tcp
 
 5. **Allow HTTPS:**
 
-```sudo ufw allow 443/tcp```
+              sudo ufw allow 443/tcp
 
 6. **Block FTP:**
 
-```sudo ufw deny 21```
+              sudo ufw deny 21
 
 7. **Allow MySQL:**
 
-```sudo ufw allow 3306/tcp```
+       sudo ufw allow 3306/tcp
 
 8. **Allow Specific IP:**
 

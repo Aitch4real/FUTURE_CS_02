@@ -6,7 +6,7 @@ This project demonstrates how to set up a basic firewall on a Kali Linux virtual
 
 1. **Install UFW:**
 
-   ```bash
+   ```
    sudo apt update
    sudo apt install ufw
 2. **Enable UFW:**
@@ -15,63 +15,64 @@ This project demonstrates how to set up a basic firewall on a Kali Linux virtual
 sudo ufw enable
 Configure Major Firewall Rules:
 
-Allow SSH:
-
+3. **Allow SSH:**
 
 sudo ufw allow ssh
-Allow HTTP:
 
+4. **Allow HTTP:**
 
 sudo ufw allow 80/tcp
-Allow HTTPS:
+
+5. **Allow HTTPS:**
 
 sudo ufw allow 443/tcp
-Block FTP:
 
+6. **Block FTP:**
 
 sudo ufw deny 21
-Allow MySQL:
 
+7. **Allow MySQL:**
 
 sudo ufw allow 3306/tcp
-Allow Specific IP:
 
+8. **Allow Specific IP:**
 
 sudo ufw allow from 192.168.1.10
-Deny Specific IP:
 
+9. **Deny Specific IP: **
 
 sudo ufw deny from 203.0.113.5
-Allow Specific Subnet:
 
+10. **Allow Specific Subnet:**
 
 sudo ufw allow from 192.168.1.0/24
-Deny Specific Subnet:
 
+11. **Deny Specific Subnet:**
 
 sudo ufw deny from 203.0.113.0/24
-Allow Port Range:
 
+12. **Allow Port Range:**
 
 sudo ufw allow 1000:2000/tcp
-Deny Port Range:
 
+13. **Deny Port Range:**
 
 sudo ufw deny 6000:7000/tcp
-Allow Outbound Traffic:
 
+14. **Allow Outbound Traffic:**
 
 sudo ufw default allow outgoing
-Deny Outbound Traffic:
 
+15. **Deny Outbound Traffic:**
 
 sudo ufw default deny outgoing
-Allow Established Connections:
 
+16. **Allow Established Connections:**
 
 sudo ufw allow in on eth0 to any port 1024:65535 proto tcp
 sudo ufw allow in on eth0 to any port 1024:65535 proto udp
-Check UFW Status:
+
+17. **Check UFW Status:**
 
 
 sudo ufw status verbose

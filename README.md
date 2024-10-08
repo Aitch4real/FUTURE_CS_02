@@ -12,7 +12,7 @@ This project demonstrates how to set up a basic firewall on a Kali Linux virtual
 2. **Enable UFW:**
 
 
-```sudo ufw enable```
+     ```sudo ufw enable```
 
 Configure Major Firewall Rules:
 
